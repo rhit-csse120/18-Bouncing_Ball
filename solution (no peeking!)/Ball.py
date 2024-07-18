@@ -4,8 +4,8 @@ import random
 
 class Ball:
     def __init__(self, screen: pygame.Surface,
-                 min_speed=1, max_speed=5,
-                 min_radius=5, max_radius=20):
+                 min_radius=5, max_radius=20,
+                 min_speed=1, max_speed=5):
         self.screen = screen
 
         # Random position, color and (within specified range) radius:

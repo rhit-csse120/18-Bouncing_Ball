@@ -15,13 +15,13 @@ Authors: Dave Fisher, David Mutchler, many others before them, and
 #  3. Make the Ball move.
 #  4. Make the Ball bounce.
 #  5. Construct two Ball instances (instead of just a single Ball),
-#     on top of each other.  After testing that, make each Ball start:
+#     initially on top of each other.  Then make each Ball start:
 #       a. At a random place in the screen.
-#       b. With a random speed within some range specified
-#            by __init__ parameters.
+#       b. With a random color.
 #       c. With a random radius within some range specified
 #            by __init__ parameters.
-#       d. With a random color.
+#       d. With a random speed within some range specified
+#            by __init__ parameters, along with a random direction.
 #  6. Make a list of (say) 100 Ball instances that all move and draw.
 #     Make the screen bigger (say, 1000 by 650) to accommodate them.
 #  7. Make a Balls class that stores its own list of Ball instances
@@ -49,13 +49,13 @@ def main():
     pygame.display.set_caption("Bouncing Balls")
     clock = pygame.time.Clock()
 
-    ball1 = Ball(screen, 3, 10)
+    ball1 = Ball(screen, 2, 30, 2, 10)
     ball2 = Ball(screen, max_speed=2)
     balls = []
     for k in range(10):
         balls.append(Ball(screen))
-    slow_balls = Balls(screen,25, max_speed=2, max_radius=30)
-    fast_balls = Balls(screen,75, max_speed=15, max_radius=8)
+    slow_balls = Balls(screen,25, max_radius=30, max_speed=2)
+    fast_balls = Balls(screen,75, max_radius=8, max_speed=15)
 
     # Game loop:
     while True:
