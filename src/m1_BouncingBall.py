@@ -8,6 +8,9 @@ Authors: Dave Fisher, David Mutchler, many others before them, and
 """  # TODO: PUT YOUR NAME IN THE ABOVE LINE.
 # ------------------------------------------------------------------------------
 # TODO: IN-CLASS, WITH YOUR INSTRUCTOR:
+#  0. Run the supplied solution and DESIGN (but do not yet IMPLEMENT)
+#       the obvious CLASS (type of thing) in this project.
+#       What should be its methods?  Its instance variables?
 #  0. Read and absorb the starting code (standard for a PyGame project).
 #  1. Implement a Ball class with stubs for its methods (__init__, move, draw).
 #     Construct a single Ball.
