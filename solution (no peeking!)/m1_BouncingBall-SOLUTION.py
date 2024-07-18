@@ -57,8 +57,10 @@ def main():
     balls = []
     for k in range(10):
         balls.append(Ball(screen))
-    slow_balls = Balls(screen,25, max_radius=30, max_speed=2)
-    fast_balls = Balls(screen,75, max_radius=8, max_speed=15)
+    slow_balls = Balls(screen,25, min_radius=15, max_radius=50,
+                       max_speed=4)
+    fast_balls = Balls(screen,75, max_radius=12,
+                       min_speed=5, max_speed=25)
 
     # Game loop:
     while True:
