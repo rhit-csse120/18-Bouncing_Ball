@@ -23,7 +23,7 @@ Authors: Dave Fisher, David Mutchler, many others before them, and
 #            by __init__ parameters.
 #       d. With a random color.
 #  6. Make a list of (say) 100 Ball instances that all move and draw.
-#     Make the screen bigger (say, 1000 by 800) to accommodate them.
+#     Make the screen bigger (say, 1000 by 650) to accommodate them.
 #  7. Make a Balls class that stores its own list of Ball instances
 #     and moves/draws them. Construct two Balls instances, with (respectively):
 #       -- 25 slow, big Ball instances
@@ -38,7 +38,7 @@ from Ball import Ball
 from Balls import Balls
 
 SCREEN_WIDTH = 1000
-SCREEN_HEIGHT = 800
+SCREEN_HEIGHT = 650
 SCREEN_BACKGROUND = "gray"
 
 
