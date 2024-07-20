@@ -25,7 +25,7 @@ Authors: Dave Fisher, David Mutchler, many others before them, and
 #            by __init__ parameters.
 #       d. With a random speed within some range specified
 #            by __init__ parameters, along with a random direction.
-#  6. Make a list of (say) 100 Ball instances that all move and draw.
+#  6. Make a list of (say) 10 Ball instances that all move and draw.
 #     Make the screen bigger (say, 1000 by 650) to accommodate them.
 #  7. Make a Balls class that stores its own list of Ball instances
 #     and moves/draws them. Construct two Balls instances, with (respectively):
