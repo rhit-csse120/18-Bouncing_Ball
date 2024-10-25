@@ -3,13 +3,20 @@ import random
 
 
 class Ball:
-    def __init__(self, screen: pygame.Surface,
-                 min_radius=10, max_radius=40,
-                 min_speed=1, max_speed=8):
+    def __init__(
+        self,
+        screen: pygame.Surface,
+        min_radius=10,
+        max_radius=40,
+        min_speed=1,
+        max_speed=8,
+    ):
         self.screen = screen
-        self.color = (random.randint(0, 255),
-                      random.randint(0, 255),
-                      random.randint(0, 255))
+        self.color = (
+            random.randint(0, 255),
+            random.randint(0, 255),
+            random.randint(0, 255),
+        )
         self.x = random.randint(0, self.screen.get_width() - 1)
         self.y = random.randint(0, self.screen.get_height() - 1)
         self.radius = random.randint(min_radius, max_radius)
@@ -34,5 +41,4 @@ class Ball:
             self.speed_y = -self.speed_y
 
     def draw(self):
-        pygame.draw.circle(self.screen, self.color,
-                           (self.x, self.y), self.radius)
+        pygame.draw.circle(self.screen, self.color, (self.x, self.y), self.radius)
