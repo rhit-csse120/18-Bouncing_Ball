@@ -3,9 +3,18 @@ This module demonstrates how to do the following in PyGame:
   -- user-defined classes, and instances thereof
   -- animated geometric objects (moving circles)
 
-Authors: Dave Fisher, David Mutchler, many others before them, and
-         SOLUTION by David Mutchler.
-"""  # DONE: PUT YOUR NAME IN THE ABOVE LINE.
+Authors: David Mutchler, Rachel Krohn, Dave Fisher, Shawn Bohner, Sriram Mohan,
+         Amanda Stouder, Vibha Alangar, Mark Hays, Dave Henthorn, Matt Boutell,
+         Scott McClellan, Yiji Zhang, Mohammed Noureddine, Steve Chenoweth,
+         Claude Anderson, Michael Wollowski, Chandan Rupakheti,
+         Derek Whitley, Curt Clifton, Valerie Galluzzi, their colleagues and
+         SOLUTION by David Mutchler
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
+
+"""
+Academic Integrity: I got help on this module from:
+         David Mutchler.
+"""  # DONE: If you got help from anyone on this module, list their names here.
 # ------------------------------------------------------------------------------
 # DONE: IN-CLASS, WITH YOUR INSTRUCTOR:
 #  0. Run the supplied solution and DESIGN (but do not yet IMPLEMENT)
@@ -61,12 +70,8 @@ def main():
         ball = Ball(screen)
         balls.append(ball)
 
-    slow_balls = Balls(screen, 25,
-                       min_radius=15, max_radius=50,
-                       max_speed=4)
-    fast_balls = Balls(screen, 75,
-                       max_radius=12,
-                       min_speed=5, max_speed=25)
+    slow_balls = Balls(screen, 25, min_radius=15, max_radius=50, max_speed=4)
+    fast_balls = Balls(screen, 75, max_radius=12, min_speed=5, max_speed=25)
 
     # Game loop:
     while True:
