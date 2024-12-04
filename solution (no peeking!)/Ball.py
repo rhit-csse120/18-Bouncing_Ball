@@ -23,11 +23,11 @@ class Ball:
 
         direction = random.choice((-1, 1))
         x_above_min = random.random() * (max_speed - min_speed)
-        self.speed_x = direction * x_above_min
+        self.speed_x = direction * (x_above_min + min_speed)
 
         direction = random.choice((-1, 1))
         y_above_min = random.random() * (max_speed - min_speed)
-        self.speed_y = direction * y_above_min
+        self.speed_y = direction * (y_above_min + min_speed)
 
     def move(self):
         self.x += self.speed_x
